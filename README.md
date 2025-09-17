@@ -18,7 +18,7 @@ javac -version
 ```
 
 ## Run (simple javac/java)
-From this `Java` directory:
+From root directory:
 ```powershell
 # Compile
 javac -d out src/main/java/users/Main.java
