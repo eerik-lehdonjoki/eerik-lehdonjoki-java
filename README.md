@@ -1,7 +1,7 @@
 # Java Version
 
 ## Features
-- Loads local `users.csv` in this `Java/` directory
+- Loads local `users.csv` in this directory
 - Filtering users by minimum age (default 30)
 - Counting users by country
 - Calculating average age (1 decimal)
@@ -35,12 +35,12 @@ java -cp out users.Main region
 ```
 
 ## Maven (optional)
-A minimal `pom.xml` is included. From inside `Java` directory:
+A minimal `pom.xml` is included. From inside root directory:
 ```powershell
 mvn -q compile exec:java -Dexec.mainClass=users.Main -Dexec.args=summary
 ```
 (Install the `exec-maven-plugin` if you don't have it cached; the POM config handles it.)
 
 ## Notes
-- CSV file is local (`Java/users.csv`). Run commands from inside `Java/`.
+- CSV file is local (`users.csv`). Run commands from inside root directory.
 - Pure standard library; no external dependencies aside from the optional Maven build plugins.
